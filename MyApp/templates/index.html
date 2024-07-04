@@ -1,0 +1,23 @@
+{% extends 'Main/main.html' %}
+{%  block title %}  Task Maneger  {%  endblock title %}
+{% load static %}
+
+{%  block content %}
+
+<div class="banner_section">
+   <div class="container">
+    <div class="row">
+        <div class="contents_all">
+            <div class="cont">
+                <h1 class="mb-4 text-white">Task Management</h1>
+                <p class="mb-3 para">Allocating specific blocks of time to different tasks or activities.</p>
+                <div class="mt-5">
+                    <a  class="btns1" href="{%  url 'register' %}">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+
+{% endblock content %}

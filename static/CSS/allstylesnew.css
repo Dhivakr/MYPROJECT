@@ -1,0 +1,105 @@
+
+.navbars12
+{
+    background:rgb(9, 1, 46);
+}
+.navbar-brand
+{
+    color: white !important;
+    font-weight:bolder;
+}
+.nav-link
+{
+    color: white !important;
+    text-transform: uppercase;
+}
+.nav-link:hover
+{
+    color: orange !important;
+}
+.contents_all
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cont
+{
+    text-align: center;
+}
+.btns1
+{
+    background: orange;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius:5px ;
+    transition: 0.5s;
+    margin:20px !important;
+    text-decoration: none;
+    padding: 8px 30px;
+    
+}
+
+
+.btns1:hover
+{
+    background: rgb(9, 1, 46);
+    transition: 0.5s;
+}
+.banner_section
+{
+    background: rgb(26,219,152);
+    background: radial-gradient(circle, rgba(26,219,152,1) 0%, rgba(169,237,191,1) 39%);
+}
+.para
+{
+    font-weight: bolder;
+}
+.box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .boxes1
+{
+    width: 500px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 35px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+.heads
+{
+    background: rgb(165, 2, 157) !important;
+    color: white !important;
+}
+table
+{
+    width: 100%;
+    table-layout: auto;
+}
+table th
+{
+    text-align: center;
+    padding: 10px 0px;
+}
+table tr
+{
+    margin-top: 10px;
+}
+table td
+{
+    text-align: center;
+    font-weight:bolder !important;
+}
+tr:nth-child(odd) {
+    background-color: #e3f0f0;
+}
+.contents
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}

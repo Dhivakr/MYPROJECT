@@ -1,0 +1,26 @@
+{% extends 'Main/main.html' %}
+{%  block title %}  Task Maneger  {%  endblock title %}
+
+{% load static %}
+
+{%  block content %}
+
+<div>
+    <div>
+        <div class="container" style="margin-bottom: 50px;">
+            <div class="row">
+                    <div class="card mt-5">
+                        <div class="card-header">
+                           <b> {{  task_view.id  }}</b><span style="float: right;" > <b>{{ task_view.created_at  }}</b> </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ task_view.name  }} <span style="float: right;" > <b>{{ task_view.priority  }}</b> </span></h5>
+                            <p class="card-text">{{  task_view.description }}</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

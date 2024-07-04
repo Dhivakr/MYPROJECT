@@ -1,0 +1,14 @@
+{% extends "Main/main.html" %}
+
+{% block content %}
+<div class="container" style="margin-top: 70px; margin-bottom: 30px;">
+    <h2>Delete Item</h2>
+    <p>Are you sure you want to delete "{{ item.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Delete</button>
+        <a href="{% url 'view_task'%}" class="btn btn-primary">Cancel</a>
+        
+    </form>
+</div>
+{% endblock %}

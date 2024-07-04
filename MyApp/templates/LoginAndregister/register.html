@@ -1,0 +1,38 @@
+{% extends 'Main/main.html' %}
+{%  block title %}  Task Maneger  {%  endblock title %}
+
+{% load static %}
+
+{%  block content %}
+
+<div class="box">
+    <div class="boxes1" style="margin-top:70px ; margin-bottom: 50px !important;">
+        <h1 class="text-center" >Register</h1>
+        <form action="" method="post">
+            {%  csrf_token %}
+
+            <div class="mb-3">
+                <label for="">Username</label>
+                {{ form.username }}
+            </div>
+            <div class="mb-3">
+                <label for="">Email</label>
+                {{ form.email }}
+            </div>
+            <div class="mb-3">
+                <label for="">Password</label>
+                {{ form.password1 }}
+            </div>
+            <div class="mb-3">
+                <label for="">Conf Password</label>
+                {{ form.password2 }}
+            </div>
+
+            <div class="text-center mt-4" >
+                <button type="submit" class="btn btn-success" ><b>Register Now</b></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

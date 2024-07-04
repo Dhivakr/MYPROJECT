@@ -1,0 +1,25 @@
+{% extends 'Main/main.html' %}
+{%  block title %}  Task Maneger  {%  endblock title %}
+
+{% load static %}
+
+{%  block content %}
+
+<div class="banner_section">
+   <div class="container">
+    <div class="row">
+        <div class="contents_all">
+            <div class="cont">
+                <h1 class="mb-4 text-white">Dashboard Task Management</h1>
+                <p style="width: 550px; text-align:center !important; "><b>Use a system to prioritize tasks based on urgency and importance. The Eisenhower Matrix is a popular method for categorizing tasks into four quadrants.</b></p>
+                <div class="mt-5 text-center">
+                    <a  class="btns1" href="{%  url 'create_task' %}">Create A New Task</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+</div>
+
+{% endblock content %}
